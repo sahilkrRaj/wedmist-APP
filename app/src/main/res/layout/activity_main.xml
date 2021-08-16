@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Wedmist">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <ImageView
+                    android:foreground="@drawable/vector"
+                    android:layout_width="match_parent"
+                    android:layout_height="371dp"
+                    android:src="@drawable/ser_image"
+                    android:scaleType="fitXY"/>
+                
+                <TextView
+                    android:background="@drawable/underline"
+                    android:id="@+id/service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FITNESS &amp; HEALTHCARE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    android:textSize="22sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="250dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's Take A Step Towards Peace And \n                            Selfcare"
+                    android:textColor="@color/white"
+                    android:paddingTop="2dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/service"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    />
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/tracker"
+                android:background="#F2F6FF"
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/tracker"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2115+ Fitness Services Booked in last 365 days"
+                    android:layout_marginLeft="47dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Fitness &amp; Healthcare Services"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_below="@id/tracker"/>
+
+            <LinearLayout
+                android:id="@+id/category"
+                android:layout_below="@id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123.5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pic1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp"/>
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoga Trainer"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pic1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp"/>
+                        <TextView
+                            android:layout_below="@id/img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoga Trainer"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pic1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp"/>
+                        <TextView
+                            android:layout_below="@id/img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoga Trainer"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123.5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#F2F6FF"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                
+                <TextView
+                    android:id="@+id/see_all_services"
+                    android:background="@drawable/underline1"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4B6EE8"
+                    android:text="See all Services"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"/>
+                
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="14dp"/>
+                <RelativeLayout
+                    android:layout_below="@id/see_all_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE">
+
+                </RelativeLayout>
+
+                
+                </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
