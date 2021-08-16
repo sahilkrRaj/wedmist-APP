@@ -65,8 +65,6 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -201,7 +199,22 @@
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent">
-
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pic1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp"/>
+                        <TextView
+                            android:layout_below="@id/img4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoga Trainer"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
                     <RelativeLayout
                         android:background="#F2F6FF"
@@ -209,7 +222,22 @@
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent">
-
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pic1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="14dp"/>
+                        <TextView
+                            android:layout_below="@id/img5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yoga Trainer"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
                     <RelativeLayout
                         android:background="#F2F6FF"
