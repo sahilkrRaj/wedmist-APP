@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/white"
-            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:title="Wedmist">
 
             <RelativeLayout
@@ -278,6 +278,7 @@
                     android:layout_marginRight="18dp"
                     android:layout_marginTop="14dp"/>
                 <RelativeLayout
+                    android:id="@+id/line"
                     android:layout_below="@id/see_all_services"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
@@ -285,8 +286,189 @@
 
                 </RelativeLayout>
 
-                
+
+                <RelativeLayout
+                    android:layout_below="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="462dp">
+
+                    <ImageView
+                        android:id="@+id/security"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/security"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wedmist is Safe"
+                        android:textSize="18dp"
+                        android:textColor="#4B6EE8"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@id/security"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book Our Service experts who adhere to safety"
+                        android:layout_marginLeft="18dp"
+                        android:layout_below="@id/security"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"/>
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontal_scroll"
+                    android:scrollbars="none"
+                    android:layout_below="@id/security"
+                    android:layout_marginTop="39dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:background="@drawable/wedmist_is_safe"
+                            android:layout_marginLeft="18dp"
+                            android:layout_width="210dp"
+                            android:layout_height="90dp">
+                            <ImageView
+                                android:id="@+id/mask"
+                                android:padding="10dp"
+                                android:src="@drawable/mask"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/circle"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="15dp"/>
+                            <TextView
+                                android:id="@+id/face_mask"
+                                android:layout_toRightOf="@+id/mask"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Face Mask"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_below="@+id/face_mask"
+                                android:layout_toRightOf="@+id/mask"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Use of masks,gloves,\nface shield, sanitizers"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:background="@drawable/wedmist_is_safe"
+                            android:layout_marginLeft="18dp"
+                            android:layout_width="210dp"
+                            android:layout_height="90dp">
+                            <ImageView
+                                android:id="@+id/tempe"
+                                android:padding="10dp"
+                                android:src="@drawable/mask"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/circle"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="15dp"/>
+                            <TextView
+                                android:id="@+id/temperature"
+                                android:layout_toRightOf="@+id/tempe"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Face Mask"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_below="@+id/temperature"
+                                android:layout_toRightOf="@+id/tempe"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Use of masks,gloves,\nface shield, sanitizers"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:background="@drawable/wedmist_is_safe"
+                            android:layout_marginLeft="18dp"
+                            android:layout_width="210dp"
+                            android:layout_height="90dp">
+                            <ImageView
+                                android:id="@+id/sani"
+                                android:padding="10dp"
+                                android:src="@drawable/mask"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/circle"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="15dp"/>
+                            <TextView
+                                android:id="@+id/sanitizer"
+                                android:layout_toRightOf="@+id/sani"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Face Mask"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_below="@+id/sanitizer"
+                                android:layout_toRightOf="@+id/sani"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Use of masks,gloves,\nface shield, sanitizers"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/roboto"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="182dp"
+                        android:layout_below="@id/horizontal_scroll"
+                        android:layout_marginTop="35dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/ad_banner"/>
+
                 </RelativeLayout>
+
+                </RelativeLayout>
+
+<!--                    make layout and add here-->
 
 
 
