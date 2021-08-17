@@ -938,7 +938,6 @@
                     android:gravity="top"
                     android:text="Levi’s"/>
                 <TextView
-
                     android:layout_width="67dp"
                     android:layout_height="16dp"
                     android:layout_alignParentLeft="true"
@@ -1020,7 +1019,7 @@
 
             <RelativeLayout
                 android:id="@+id/other_printing_master_conainer"
-                android:layout_below="@+id/sponosor2_matercard_item"
+                android:layout_below="@+id/line7"
                 android:layout_margin="0.5dp"
                 android:layout_width="match_parent"
                 android:layout_height="275dp">
