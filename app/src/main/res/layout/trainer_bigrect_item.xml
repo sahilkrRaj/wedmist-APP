@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:id="@+id/trainer_modes_recycler_item">
+    <ImageView
+        android:layout_width="324dp"
+        android:layout_height="216.07dp"
+        android:id="@+id/trainer_modes_recycler_image"
+        />
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="123dp"
+        android:layout_height="54.26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/trigradientbox"
+        />
+    <View
+        android:id="@+id/rectangle_"
+        android:layout_width="123dp"
+        android:layout_height="54.26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68.74dp"
+        android:background="@drawable/trigradientbox"
+        android:rotation="180"
+        />
+
+
+
+</RelativeLayout>
