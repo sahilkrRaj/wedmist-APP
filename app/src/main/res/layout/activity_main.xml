@@ -1136,6 +1136,201 @@
             </RelativeLayout>
 
 
+            <RelativeLayout
+                android:layout_below="@+id/line9"
+                android:layout_width="match_parent"
+                android:background="@drawable/margin"
+                android:layout_height="707dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="What our Customers says about us"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <include layout="@layout/review_video_layout"/>
+                        <include layout="@layout/review_video_layout"/>
+                        <include layout="@layout/review_video_layout"/>
+                        <include layout="@layout/review_video_layout"/>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+                <RelativeLayout
+                    android:layout_below="@+id/scroll_view"
+                    android:layout_width="409dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="34dp"
+                    android:background="#1A004EFF"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Happy customers = Happy Wedmist"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/textView2"
+                        android:id="@+id/textView7"
+                        android:layout_width="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="196dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rectangle" />
+
+                    <RelativeLayout
+
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="106dp"
+                        android:layout_centerHorizontal="true"
+                        >
+
+                        <RelativeLayout
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="36dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/customer" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@id/imageView2"
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="44dp"
+                                android:text="Nikita Pal"
+                                android:textColor="@color/black" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/textView4"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="7.19dp"
+                                android:layout_toRightOf="@id/imageView2"
+                                android:layout_below="@id/textView3"
+                                android:layout_width="46dp"
+                                android:background="@drawable/rating"
+                                android:layout_height="23.81dp">
+
+                                <TextView
+                                    android:id="@+id/rating_point"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5.0"
+                                    android:textSize="11dp"
+                                    android:textColor="@color/white"
+                                    />
+
+                                <ImageView
+                                    android:layout_toRightOf="@id/rating_point"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_width="9.52dp"
+                                    android:layout_marginLeft="4.74dp"
+                                    android:layout_height="9.52dp"
+                                    android:src="@drawable/ic_baseline_star_24"/>
+
+                            </RelativeLayout>
+
+
+
+                            <TextView
+                                android:layout_below="@id/textView4"
+                                android:layout_toRightOf="@id/imageView2"
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="4dp"
+                                android:text="true"
+                                android:textSize="14dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_toRightOf="@id/textView4"
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="71dp"
+                                android:text="Our dream came"
+                                android:textSize="14dp"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="137dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_width="239dp"
+                                android:text="@string/customer_review"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="175dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="''"
+                                android:textColor="#4B6EE8"
+                                android:textSize="150dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:paddingTop="80dp"/>
+
+
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
 
 
 
