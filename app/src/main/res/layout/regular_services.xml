@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
-        android:id="@+id/regular_services_header"
+        android:id="@+id/different_services_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regular Services for You"
@@ -14,18 +14,18 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"/>
     <TextView
-        android:id="@+id/regular_sub_text"
+        android:id="@+id/different_service_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get upto 40% off on Home Salon services"
-        android:layout_below="@+id/regular_services_header"
+        android:layout_below="@+id/different_services_header"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="4dp"
         android:textColor="@color/black"/>
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/regular_sub_text"
+        android:layout_below="@+id/different_service_description"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="18dp"
         android:scrollbars="none">

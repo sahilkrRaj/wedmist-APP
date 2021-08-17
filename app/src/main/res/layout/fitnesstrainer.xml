@@ -5,7 +5,7 @@
     android:background="#F2F6FF">
 
     <TextView
-        android:id="@+id/fitness_trainer_header"
+        android:id="@+id/shirt_printing_header"
         android:layout_width="120dp"
         android:layout_height="21dp"
         android:layout_alignParentLeft="true"
@@ -19,13 +19,13 @@
         android:gravity="top"
     />
     <TextView
-        android:id="@+id/fitness_type"
+        android:id="@+id/shirt_print_description"
         android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="4dp"
-        android:layout_below="@+id/fitness_trainer_header"
+        android:layout_below="@+id/shirt_printing_header"
         android:text="Sore today, strong tomorrow"
         android:textColor="@color/black"
         android:fontFamily="@font/roboto_thin"
@@ -35,8 +35,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/trainer_modes_recyclerview"
-        android:layout_below="@+id/fitness_type"
+        android:id="@+id/shirt_print_modes_recyclerview"
+        android:layout_below="@+id/shirt_print_description"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="18dp">
 
@@ -53,5 +53,5 @@
         android:textColor="@color/white"
         android:fontFamily="@font/roboto_medium"
         android:textSize="18sp"
-        android:layout_below="@+id/trainer_modes_recyclerview"/>
+        android:layout_below="@+id/shirt_print_modes_recyclerview"/>
 </RelativeLayout>

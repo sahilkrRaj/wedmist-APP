@@ -8,8 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!--    ADDED-->
     <color name="colorPrimary">#0F2146</color>
-    <color name="colorPrimaryDark">#001834</color>
-    <color name="colorAccent">#4B6EE8</color>
+    <color name="colorPrimaryDark">#0F2E71</color>
+    <color name="colorAccent">#6776FF</color>
 
+    <color name="blueGradient">#FF00072B</color>
+    <color name="grayGradient">#1AB0B0B0</color>
+    <color name="whiteGradient">#0dffffff</color>
+    <color name="lightestBlue">#F2F6FF</color>
+    <color name="lightBlue">#ACC3FF</color>
+    <color name="colorButton">#4B6EE8</color>
+    <color name="darkGreen">#128200</color>
+    <color name="red">#FF4957</color>
 </resources>

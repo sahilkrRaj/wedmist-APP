@@ -5,7 +5,7 @@
     android:layout_height="275dp">
 
     <TextView
-        android:id="@+id/fitness_type"
+        android:id="@+id/shirt_print_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Physiotherapy"
@@ -16,8 +16,8 @@
         android:textColor="@color/black"
         />
     <TextView
-        android:id="@+id/details"
-        android:layout_below="@id/fitness_type"
+        android:id="@+id/graphic_designing_details"
+        android:layout_below="@id/shirt_print_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Do not let the pain stop you"
@@ -42,7 +42,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="176dp"
-        android:layout_below="@id/details"
+        android:layout_below="@id/graphic_designing_details"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="13dp"/>
 

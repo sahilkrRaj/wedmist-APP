@@ -30,29 +30,36 @@
                     android:layout_height="371dp"
                     android:src="@drawable/ser_image"
                     android:scaleType="fitXY"/>
-                
+
                 <TextView
-                    android:background="@drawable/underline"
                     android:id="@+id/service"
-                    android:layout_width="wrap_content"
+                    android:layout_width="239dp"
                     android:layout_height="wrap_content"
-                    android:text="FITNESS &amp; HEALTHCARE"
+                    android:text="PRINTING &amp; GRAPHICS"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
                     android:paddingTop="2dp"
                     android:textSize="22sp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="250dp"/>
+                    android:layout_marginTop="260dp"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="2dp"
+                    android:background="@color/red"
+                    android:layout_below="@+id/service"
+                    android:layout_centerHorizontal="true"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Let's Take A Step Towards Peace And \n                            Selfcare"
+                    android:text="Share Us Your Creativity, We’ll Make It To \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tReality. "
                     android:textColor="@color/white"
                     android:paddingTop="2dp"
                     android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_below="@id/service"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="13dp"
+                    android:lineHeight="21sp"
                     />
             </RelativeLayout>
 
@@ -83,17 +90,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2115+ Fitness Services Booked in last 365 days"
+                    android:text="2115+ Lifestyle Services Booked in last 365 days"
                     android:layout_marginLeft="47dp"
                     android:layout_centerVertical="true"/>
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/text1"
+                android:id="@+id/service_category_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Top Fitness &amp; Healthcare Services"
+                android:text="Top Printing Services"
                 android:textSize="18dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="18dp"
                 android:layout_marginTop="14dp"
@@ -101,8 +109,8 @@
                 android:layout_below="@id/tracker"/>
 
             <LinearLayout
-                android:id="@+id/category"
-                android:layout_below="@id/text1"
+                android:id="@+id/service_category_par_linlayout"
+                android:layout_below="@id/service_category_header"
                 android:layout_width="match_parent"
                 android:layout_height="247dp"
                 android:layout_marginLeft="18dp"
@@ -115,7 +123,7 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -131,7 +139,7 @@
                             android:layout_below="@id/img1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Yoga Trainer"
+                            android:text="mug printing"
                             android:layout_marginTop="6dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
@@ -139,7 +147,7 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -164,7 +172,7 @@
 
                     </RelativeLayout>
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -194,7 +202,7 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -217,7 +225,7 @@
                             android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -240,7 +248,7 @@
                             android:layout_centerHorizontal="true"/>
                     </RelativeLayout>
                     <RelativeLayout
-                        android:background="#F2F6FF"
+                        android:background="@color/lightestBlue"
                         android:layout_margin="0.5dp"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -253,8 +261,8 @@
             </LinearLayout>
 
             <RelativeLayout
-                android:id="@+id/wedmist_is_safe"
-                android:layout_below="@id/category"
+                android:id="@+id/wedmist_is_safe_header"
+                android:layout_below="@id/service_category_par_linlayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                >
@@ -265,7 +273,7 @@
                     android:textSize="14dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#4B6EE8"
+                    android:textColor="@color/colorButton"
                     android:text="See all Services"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="14dp"
@@ -283,7 +291,7 @@
                     android:layout_below="@id/see_all_services"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:background="#EEEEEE">
+                    android:background="@color/grayGradient">
                 </RelativeLayout>
 
 
@@ -305,7 +313,7 @@
                         android:layout_height="wrap_content"
                         android:text="Wedmist is Safe"
                         android:textSize="18dp"
-                        android:textColor="#4B6EE8"
+                        android:textColor="@color/colorButton"
                         android:layout_marginLeft="7dp"
                         android:layout_toRightOf="@id/security"
                         android:layout_marginTop="20dp"/>
@@ -468,17 +476,17 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/mental_health_container"
+                android:id="@+id/graphic_designing_master_container"
                 android:layout_margin="0.5dp"
                 android:layout_width="match_parent"
                 android:layout_height="275dp"
-                android:layout_below="@+id/wedmist_is_safe">
+                android:layout_below="@+id/wedmist_is_safe_header">
 
                 <TextView
-                    android:id="@+id/mental_health_fitness_type"
+                    android:id="@+id/graphic_designing_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mental Health"
+                    android:text="Graphic Designing"
                     android:textSize="18dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
@@ -486,11 +494,11 @@
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:id="@+id/details"
-                    android:layout_below="@id/mental_health_fitness_type"
+                    android:id="@+id/graphic_designing_details"
+                    android:layout_below="@id/graphic_designing_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Do not let the pain stop you"
+                    android:text="Where creativity meets technology"
                     android:textSize="12dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
@@ -509,10 +517,11 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginRight="18dp"
                     android:layout_marginTop="18dp"/>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="176dp"
-                    android:layout_below="@id/details"
+                    android:layout_below="@id/graphic_designing_details"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="13dp"/>
             </RelativeLayout>
@@ -520,25 +529,25 @@
 
             <RelativeLayout
                 android:id="@+id/line4"
-                android:layout_below="@id/mental_health_container"
+                android:layout_below="@id/graphic_designing_master_container"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#EEEEEE"
+                android:background="@color/grayGradient"
                 />
 
 
             <RelativeLayout
-                android:id="@+id/Physiotherapy_container"
+                android:id="@+id/Adv_Promotions_master_container"
                 android:layout_margin="0.5dp"
                 android:layout_width="match_parent"
                 android:layout_height="275dp"
                 android:layout_below="@+id/line4">
 
                 <TextView
-                    android:id="@+id/Physiotherapy_fitness_type"
+                    android:id="@+id/Adv_Promotions_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Physiotherapy"
+                    android:text="Adv. and Promotions"
                     android:textSize="18dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
@@ -546,11 +555,11 @@
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:id="@+id/Physiotherapy_details"
-                    android:layout_below="@id/Physiotherapy_fitness_type"
+                    android:id="@+id/Adv_Promotions_details"
+                    android:layout_below="@id/Adv_Promotions_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Do not let the pain stop you"
+                    android:text="Building your own audience"
                     android:textSize="12dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
@@ -571,27 +580,27 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="176dp"
-                    android:layout_below="@id/Physiotherapy_details"
+                    android:layout_below="@id/Adv_Promotions_details"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="13dp"/>
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/line5"
-                android:layout_below="@id/Physiotherapy_container"
+                android:layout_below="@id/Adv_Promotions_master_container"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#EEEEEE"
+                android:background="@color/grayGradient"
                 />
 
 
             <RelativeLayout
-                android:id="@+id/sponosor_card_item"
+                android:id="@+id/sponosor_first_master_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/line5">
 
                 <ImageView
-                    android:id="@+id/company_logoimg"
+                    android:id="@+id/sponsor_first_logoimg"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/image_305"
@@ -603,25 +612,25 @@
                     android:elevation="20dp"/>
 
                 <TextView
-                    android:id="@+id/company_name"
-                    android:layout_width="37dp"
+                    android:id="@+id/sponsor_first_company_name"
+                    android:layout_width="wrap_content"
                     android:layout_height="21dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="78dp"
                     android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@id/company_logoimg"
+                    android:layout_toRightOf="@id/sponsor_first_logoimg"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="top"
-                    android:text="Nike"/>
+                    android:text="Classmate"/>
                 <TextView
-                    android:id="@+id/sponsored"
+                    android:id="@+id/sponsored_first_txt"
                     android:layout_width="67dp"
                     android:layout_height="16dp"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="78dp"
-                    android:layout_below="@+id/company_name"
+                    android:layout_below="@+id/sponsor_first_company_name"
                     android:text="sponsored"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_thin"
@@ -630,41 +639,41 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/company_logoimg"
+                    android:layout_below="@+id/sponsor_first_logoimg"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="16dp"/>
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/fitness_trainer_card"
+                android:id="@+id/shirt_print_master_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F2F6FF"
-                android:layout_below="@id/sponosor_card_item">
+                android:background="@color/lightestBlue"
+                android:layout_below="@id/sponosor_first_master_container">
 
                 <TextView
-                    android:id="@+id/fitness_trainer_header"
+                    android:id="@+id/shirt_printing_header"
                     android:layout_width="120dp"
                     android:layout_height="21dp"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="18dp"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="30dp"
-                    android:text="Fitness Trainer"
+                    android:text="T-Shirt Printing"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_medium"
                     android:textFontWeight="500"
                     android:gravity="top"
                     />
                 <TextView
-                    android:id="@+id/fitness_type"
+                    android:id="@+id/shirt_print_description"
                     android:layout_width="177dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="4dp"
-                    android:layout_below="@+id/fitness_trainer_header"
-                    android:text="Sore today, strong tomorrow"
+                    android:layout_below="@+id/shirt_printing_header"
+                    android:text="Show your imagination beyond print"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_thin"
                     android:textStyle="bold"
@@ -673,8 +682,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/trainer_modes_recyclerview"
-                    android:layout_below="@+id/fitness_type"
+                    android:id="@+id/shirt_print_modes_recyclerview"
+                    android:layout_below="@+id/shirt_print_description"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="18dp">
 
@@ -691,7 +700,7 @@
                     android:textColor="@color/white"
                     android:fontFamily="@font/roboto_medium"
                     android:textSize="18sp"
-                    android:layout_below="@+id/trainer_modes_recyclerview"/>
+                    android:layout_below="@+id/shirt_print_modes_recyclerview"/>
             </RelativeLayout>
 
             <!--            regular services starts here // try minimising the code-->
@@ -700,33 +709,33 @@
 
 
             <RelativeLayout
-                android:id="@+id/regular_service_master_card"
+                android:id="@+id/different_service_master_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/fitness_trainer_card">
+                android:layout_below="@+id/shirt_print_master_container">
                 <TextView
-                    android:id="@+id/regular_services_header"
+                    android:id="@+id/different_services_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Regular Services for You"
+                    android:text="Customize Your Own Merchandize"
                     android:fontFamily="@font/roboto"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"/>
                 <TextView
-                    android:id="@+id/regular_sub_text"
+                    android:id="@+id/different_service_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Get upto 40% off on Home Salon services"
-                    android:layout_below="@+id/regular_services_header"
+                    android:text="Experience the best with us"
+                    android:layout_below="@+id/different_services_header"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="4dp"
                     android:textColor="@color/black"/>
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/regular_sub_text"
+                    android:layout_below="@+id/different_service_description"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="18dp"
                     android:scrollbars="none">
@@ -776,7 +785,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Catering"
+                                    android:text="spa"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     android:fontFamily="@font/roboto"
@@ -891,7 +900,7 @@
 
             <RelativeLayout
                 android:id="@+id/line6"
-                android:layout_below="@id/regular_service_master_card"
+                android:layout_below="@id/different_service_master_card"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="#EEEEEE">
@@ -927,7 +936,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="top"
-                    android:text="Dabur"/>
+                    android:text="Levi’s"/>
                 <TextView
 
                     android:layout_width="67dp"
@@ -935,7 +944,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="78dp"
                     android:layout_below="@+id/company_spponsor2_name"
-                    android:text="sponsored"
+                    android:text="Sponsored"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_thin"
                     android:gravity="top"
@@ -951,17 +960,17 @@
 
 
             <RelativeLayout
-                android:id="@+id/yoga_trainer_mastercard"
+                android:id="@+id/ui_ux_master_container"
                 android:layout_below="@+id/sponosor2_matercard_item"
                 android:layout_margin="0.5dp"
                 android:layout_width="match_parent"
                 android:layout_height="275dp">
 
                 <TextView
-                    android:id="@+id/yoga_trainer_header"
+                    android:id="@+id/ui_ux_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yoga"
+                    android:text="UI &amp; UX Designing"
                     android:textSize="18dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
@@ -969,11 +978,11 @@
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:id="@+id/yoga_details"
-                    android:layout_below="@id/yoga_trainer_header"
+                    android:id="@+id/ui_ux_details"
+                    android:layout_below="@id/ui_ux_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Do not let the pain stop you"
+                    android:text="Creating interface maintaining comfort"
                     android:textSize="12dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
@@ -995,7 +1004,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="176dp"
-                    android:layout_below="@id/yoga_details"
+                    android:layout_below="@id/ui_ux_details"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="13dp"/>
 
@@ -1003,24 +1012,24 @@
 
             <RelativeLayout
                 android:id="@+id/line7"
-                android:layout_below="@id/yoga_trainer_mastercard"
+                android:layout_below="@id/ui_ux_master_container"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="#EEEEEE">
+                android:background="@color/grayGradient">
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/dietcian_mastercard"
+                android:id="@+id/other_printing_master_conainer"
                 android:layout_below="@+id/sponosor2_matercard_item"
                 android:layout_margin="0.5dp"
                 android:layout_width="match_parent"
                 android:layout_height="275dp">
 
                 <TextView
-                    android:id="@+id/dietcian_header"
+                    android:id="@+id/other_printing_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yoga"
+                    android:text="Other Printing Services"
                     android:textSize="18dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
@@ -1028,11 +1037,11 @@
                     android:textColor="@color/black"
                     />
                 <TextView
-                    android:id="@+id/dietcian_details"
-                    android:layout_below="@id/dietcian_header"
+                    android:id="@+id/other_printing_description"
+                    android:layout_below="@id/other_printing_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Do not let the pain stop you"
+                    android:text="Convert your imagination into fashion "
                     android:textSize="12dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
@@ -1054,7 +1063,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="176dp"
-                    android:layout_below="@id/dietcian_details"
+                    android:layout_below="@id/other_printing_description"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="13dp"/>
 
