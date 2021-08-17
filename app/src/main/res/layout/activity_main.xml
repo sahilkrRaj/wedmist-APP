@@ -1068,6 +1068,75 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/line8"
+                android:layout_below="@id/other_printing_master_conainer"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/grayGradient">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/read_me_master_container"
+                android:layout_below="@+id/other_printing_master_conainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/read_me_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read Me"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/read_me_details"
+                    android:layout_below="@id/read_me_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make your special Say more beautiful"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="34dp"
+                    android:text="View all"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_button"
+                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="18dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:layout_below="@id/read_me_details"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="18dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/line9"
+                android:layout_below="@id/read_me_master_container"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/grayGradient">
+            </RelativeLayout>
+
+
+
 
 
 
